@@ -7,24 +7,29 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* Accordion styling */
 			.accordion-header {
 				cursor: pointer;
-				padding: 10px;
-				background-color: #f4f4f4;
+				padding: 15px;
+				background-color: #2e4053; /* Darker background for better contrast */
+				color: #ffffff; /* White text for readability */
 				border: 1px solid #ddd;
 				margin-top: 5px;
 				font-weight: bold;
 			}
 			.accordion-content {
 				display: none;
-				padding: 10px;
+				padding: 15px;
 				border: 1px solid #ddd;
 				border-top: none;
-				background-color: #fff;
+				background-color: #f9f9f9; /* Light gray for a clean contrast */
+				color: #333; /* Darker text for better readability */
+				font-size: 1rem;
 			}
 			.accordion-content ul {
 				padding-left: 20px;
 				list-style-type: disc;
+				line-height: 1.6; /* Enhanced line spacing for readability */
 			}
 		</style>
 	</head>
@@ -63,18 +68,19 @@
 					<h2>Recent Learnings</h2>
 					<div class="accordion">
 						<div class="accordion-item">
-							<div class="accordion-header">1:1 Conversations – Understanding the Underlying Cause</div>
+							<div class="accordion-header">1:1 Conversations – Try to Understand the Underlying Cause</div>
 							<div class="accordion-content">
+								<p>Before jumping to conclusions and actions, the first move should be an empathetic 1:1 conversation.</p>
 								<ul>
 									<li><strong>Objective:</strong> Understand <em>why</em> the behavior is happening.</li>
-									<li><strong>Causes to Explore:</strong>
+									<li><strong>Look for potential causes:</strong>
 										<ul>
-											<li>Burnout: Signs of fatigue or disengagement.</li>
-											<li>Role mismatch: Work that doesn’t leverage strengths.</li>
-											<li>Personal challenges: Life events impacting focus.</li>
+											<li>Burnout: Are they overloaded? Showing signs of fatigue, irritability, or disengagement?</li>
+											<li>Role mismatch: Are they doing work that doesn’t play to their strengths?</li>
+											<li>Personal challenges: Are there life events affecting their mood or focus?</li>
 										</ul>
 									</li>
-									<li><strong>Approach:</strong> Use open-ended questions:
+									<li><strong>Approach:</strong> Be non-confrontational, use open-ended questions like:
 										<blockquote>
 											<p>“I’ve noticed some tension in recent meetings. How are things going on your end?”</p>
 											<p>“What’s been feeling most challenging in your work lately?”</p>
@@ -86,27 +92,44 @@
 						<div class="accordion-item">
 							<div class="accordion-header">Supportive Performance Improvement Plan (PIP)</div>
 							<div class="accordion-content">
+								<p>If issues persist or are performance-related, consider a <strong>Supportive PIP</strong>, not a punitive one.</p>
 								<ul>
 									<li><strong>Set Clear Expectations:</strong>
 										<ul>
-											<li>Define specific, measurable goals (e.g., “Code reviews within 48 hours”).</li>
+											<li>Define what “success” looks like in specific, measurable terms.</li>
+											<li>Examples: “All code reviews completed in 48 hours,” or “Professional tone maintained in standups.”</li>
 										</ul>
 									</li>
-									<li><strong>Timeline:</strong> Typically 4–6 weeks with weekly progress check-ins.</li>
-									<li><strong>Goal:</strong> Provide support and resources to foster improvement.</li>
+									<li><strong>Timeline:</strong> Typically 4–6 weeks.</li>
+									<li><strong>Structure:</strong>
+										<ul>
+											<li>Weekly check-ins to review progress.</li>
+											<li>Provide feedback and support (coaching, resources, etc.).</li>
+											<li>Encourage questions and two-way dialogue.</li>
+										</ul>
+									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="accordion-item">
-							<div class="accordion-header">Addressing Toxic Behavior</div>
+							<div class="accordion-header">If Behavior is Toxic</div>
 							<div class="accordion-content">
-								<p>Use the <strong>Situation-Behavior-Impact (SBI) model</strong> for feedback:</p>
+								<p>Some behaviors cross the line and affect team culture and morale. In such cases:</p>
 								<ul>
-									<li><strong>Situation:</strong> “In yesterday’s team meeting…”</li>
-									<li><strong>Behavior:</strong> “You interrupted junior members…”</li>
-									<li><strong>Impact:</strong> “It discouraged team contribution.”</li>
+									<li><strong>Give Direct Feedback – Use the SBI Model:</strong>
+										<ul>
+											<li>Situation: “In yesterday’s team meeting…”</li>
+											<li>Behavior: “…you interrupted two junior members and dismissed their ideas abruptly…”</li>
+											<li>Impact: “…which made them hesitant to contribute and visibly discouraged.”</li>
+										</ul>
+									</li>
+									<li><strong>Loop in HR or Skip-Level Manager Early:</strong>
+										<ul>
+											<li>Escalate early if behavior continues despite feedback.</li>
+											<li>HR can help document, mediate, and initiate formal actions if necessary.</li>
+										</ul>
+									</li>
 								</ul>
-								<p>Loop in HR if behavior persists despite feedback.</p>
 							</div>
 						</div>
 					</div>
@@ -157,7 +180,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script>
-			// Basic accordion functionality
+			// Accordion functionality
 			document.querySelectorAll('.accordion-header').forEach(header => {
 				header.addEventListener('click', () => {
 					const content = header.nextElementSibling;
