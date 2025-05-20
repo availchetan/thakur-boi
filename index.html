@@ -1,17 +1,22 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-  <title>Thakur Chetan Singh - Full-Stack Engineering Manager</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Thakur Chetan Singh - Full-Stack Engineering Manager</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
   <style>
-    h2, h3, p, li {
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    h1, h2, h3 {
       color: #ffffff;
     }
     .inner {
-      background-color: rgba(0, 0, 0, 0.7); /* Increased visibility */
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 2rem;
       border-radius: 1rem;
     }
@@ -19,12 +24,39 @@
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
+      justify-content: space-between;
     }
     .plan, .blog-posts article {
       background-color: #222;
-      padding: 1.5rem;
+      padding: 2rem;
       border-radius: 1rem;
-      min-width: 200px;
+      min-width: 250px;
+      text-align: center;
+    }
+    .button {
+      background-color: #2e86de;
+      color: white;
+      border: none;
+      padding: 0.75em 1.5em;
+      font-size: 1.1em;
+      border-radius: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #333;
+      border: none;
+      color: white;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -64,7 +96,7 @@
     <section id="services" class="wrapper style2 fade-up">
       <div class="inner">
         <h2>Consulting & Engineering Services</h2>
-        <p>I help SaaS, fintech, and e-commerce startups build scalable cloud applications using Google Cloud.</p>
+        <p>Helping SaaS, fintech, and e-commerce startups build scalable cloud applications using Google Cloud.</p>
         <ul>
           <li><strong>🚀 MVP Development:</strong> Full-stack React + Node.js apps built fast with CI/CD.</li>
           <li><strong>☁️ GCP Infrastructure Setup:</strong> Secure, cost-optimized environments using GKE, Cloud Run, Cloud SQL.</li>
@@ -126,13 +158,27 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="wrapper style3 fade-up">
-      <div class="inner">
-        <h2>Get in Touch</h2>
-        <p>Contact me to discuss how we can build your next project.</p>
-      </div>
-    </section>
+  <!-- Contact -->
+<section id="contact" class="wrapper style3 fade-up">
+  <div class="inner">
+    <h2>Get in Touch</h2>
+    <p>Contact me to discuss how we can build your next project.</p>
+
+    <!-- Mailjet Form Integration -->
+    <iframe 
+      data-w-type="embedded" 
+      frameborder="0" 
+      scrolling="no" 
+      marginheight="0" 
+      marginwidth="0" 
+      src="https://sqoos.mjt.lu/wgt/sqoos/xyiq/form?c=724c8460" 
+      width="100%" 
+      style="height: 0;">
+    </iframe>
+
+    <script type="text/javascript" src="https://app.mailjet.com/pas-nc-embedded-v1.js"></script>
+  </div>
+</section>
 
   </div>
 </body>
