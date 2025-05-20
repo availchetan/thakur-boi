@@ -7,59 +7,28 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
   <style>
-    h2, h3 {
+    h2, h3, p, li {
       color: #ffffff;
     }
-    p, li {
-      color: #f0f0f0;
-    }
     .inner {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7); /* Increased visibility */
       padding: 2rem;
       border-radius: 1rem;
     }
-    .button.primary.hire-me {
-      background-color: #2e86de;
-      color: white;
-      border: none;
-      padding: 0.75em 1.5em;
-      font-size: 1.1em;
-      border-radius: 5px;
-      text-transform: uppercase;
-    }
-    .pricing-grid {
+    .pricing-grid, .blog-posts {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
-      justify-content: space-between;
     }
-    .plan {
-      flex: 1;
+    .plan, .blog-posts article {
       background-color: #222;
       padding: 1.5rem;
       border-radius: 1rem;
       min-width: 200px;
     }
-    .price {
-      font-size: 1.5rem;
-      color: #2ecc71;
-      margin: 0.5rem 0;
-    }
-    .blog-posts {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .blog-posts article {
-      background-color: #222;
-      padding: 1rem;
-      border-radius: 1rem;
-      flex: 1;
-      min-width: 200px;
-    }
   </style>
 </head>
-<body class="is-preload">
+<body>
 
   <!-- Sidebar -->
   <section id="sidebar">
@@ -97,10 +66,10 @@
         <h2>Consulting & Engineering Services</h2>
         <p>I help SaaS, fintech, and e-commerce startups build scalable cloud applications using Google Cloud.</p>
         <ul>
-          <li><strong>🚀 MVP Development:</strong> Full-stack React + Node.js apps built fast with CI/CD and cloud-native architecture.</li>
-          <li><strong>☁️ GCP Infrastructure Setup:</strong> GKE, Cloud Run, Cloud SQL, Firestore, IAM – secure, cost-optimized environments.</li>
-          <li><strong>🔄 CI/CD Pipelines:</strong> GitHub Actions, Terraform, and Docker pipelines deployed to GCP with best practices.</li>
-          <li><strong>📦 Microservices & APIs:</strong> Resilient, scalable backend systems with monitoring and error handling.</li>
+          <li><strong>🚀 MVP Development:</strong> Full-stack React + Node.js apps built fast with CI/CD.</li>
+          <li><strong>☁️ GCP Infrastructure Setup:</strong> Secure, cost-optimized environments using GKE, Cloud Run, Cloud SQL.</li>
+          <li><strong>🔄 CI/CD Pipelines:</strong> GitHub Actions, Terraform, and Docker pipelines.</li>
+          <li><strong>📦 Microservices & APIs:</strong> Scalable backend systems with monitoring.</li>
         </ul>
       </div>
     </section>
@@ -125,7 +94,6 @@
             <ul>
               <li>Weekly coaching calls</li>
               <li>Custom career roadmap</li>
-              <li>Email support</li>
             </ul>
           </div>
           <div class="plan">
@@ -134,7 +102,6 @@
             <ul>
               <li>1:1 unlimited coaching</li>
               <li>Resume + LinkedIn revamp</li>
-              <li>Job search strategy sessions</li>
             </ul>
           </div>
         </div>
@@ -153,34 +120,19 @@
           </article>
           <article>
             <h3>How to Rebuild Confidence After a Layoff</h3>
-            <p>Practical tools for reframing what happened and moving forward.</p>
-          </article>
-          <article>
-            <h3>The Power of Micro-Wins in Your Career</h3>
-            <p>Celebrate small wins to rebuild momentum and purpose.</p>
+            <p>Practical tools for moving forward.</p>
           </article>
         </div>
       </div>
     </section>
 
-   <!-- Contact -->
-<section id="contact" class="wrapper style3 fade-up">
-  <div class="inner">
-    <h2>Get in Touch</h2>
-    <!-- Mailjet Form Integration -->
-    <iframe 
-      data-w-type="embedded" 
-      frameborder="0" 
-      scrolling="no" 
-      marginheight="0" 
-      marginwidth="0" 
-      src="https://sqoos.mjt.lu/wgt/sqoos/xyiq/form?c=724c8460" 
-      width="100%" 
-      style="height: 0;">
-    </iframe>
-    <script type="text/javascript" src="https://app.mailjet.com/pas-nc-embedded-v1.js"></script>
-  </div>
-</section>
+    <!-- Contact -->
+    <section id="contact" class="wrapper style3 fade-up">
+      <div class="inner">
+        <h2>Get in Touch</h2>
+        <p>Contact me to discuss how we can build your next project.</p>
+      </div>
+    </section>
 
   </div>
 </body>
